@@ -1,4 +1,4 @@
-ame: Tableau Workbook Workflows Staging
+name: Tableau Workbook Workflows Staging
 on:
   pull_request:
       branches:
