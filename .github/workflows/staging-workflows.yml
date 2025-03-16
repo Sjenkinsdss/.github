@@ -1,6 +1,6 @@
 name: Tableau Workbook Workflows Staging
 on:
-  pull_request:
+  push:
       branches:
         - master
 jobs:
@@ -17,6 +17,5 @@ jobs:
           SITE_ID: ${{ secrets.SITE_ID }}
           TABLEAU_URL: ${{ secrets.TABLEAU_URL }}
         with:
-          workbook_dir: tests/workbooks
-          env: staging
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          workbook_dir: TableauPublishTest
+          
