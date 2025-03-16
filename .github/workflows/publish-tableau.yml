@@ -1,5 +1,0 @@
-name: Publish Tableau Workbook
-on:
-  push:
-    branches:
-      - main
